@@ -11,8 +11,27 @@ public class LaunchBrowser {
         // create an instance of webDriver
         WebDriver driver = new ChromeDriver();
 
-        // to open the Website twitter.com
-        driver.get("https://facebook.com");
+        // to open the google.com
+        driver.get("https://www.google.com");
+
+            // then from google it will navigate to facebook
+     driver.navigate().to("https://facebook.com");
+
+     // hold the page for 3 seconds
+        Thread.sleep(3000);
+
+        // will navigate back to google from facebook page
+     driver.navigate().back();
+
+     // will hold in google for 3 seconds again
+        Thread.sleep(3000);
+
+        // after 3 second hold in google page, will navigatge back to facebook page
+        driver.navigate().forward();
+
+        // to refresh the page
+
+        driver.navigate().refresh();
 
         // get the current URL That is there in the browser
 
