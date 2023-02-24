@@ -1,0 +1,12 @@
+
+
+8 locators in Selenium
+    - Id
+    - Name
+    - class
+
+    - linktext
+    - partialLinkText
+    - Tagname
+    - xpath
+    - css selector
